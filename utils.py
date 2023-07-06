@@ -1,10 +1,6 @@
 import json
 from tqdm import tqdm
 
-# def preprocess(s):
-#     s = s.lower()
-#     return s
-
 def dump_jsonl(output_path, data, append=False, progress=False):
     """
     Write list of objects to a JSON lines file.
@@ -51,19 +47,3 @@ def set_random_seed(seed=42):
 
 CLOSENESS_LABELS = ['1. Close', '2. Know each other', "3. Don't know each other", "4. Don't like each other"]
 AUTHORITY_LABELS = ['0. Very respect', '1. Respect',  '2. Normal', '3. Not respect']
-
-# rep_token = "<rep>"
-# def preprocess(text):
-#     text = text.lower()
-
-#     # handle repeted charecters
-#     s = ""
-#     for k,v in groupby(text):
-#         n = len(list(v))
-#         s += k*min(n, 4)
-#         if n >= 4:
-#           s += rep_token
-
-#     text = s
-    
-#     return text
