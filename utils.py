@@ -4,7 +4,7 @@ import os
 import random
 import numpy as np
 import pandas as pd
-import torch
+# import torch
 
 def dump_jsonl(output_path, data, append=False, progress=False):
     """
@@ -43,12 +43,12 @@ def set_random_seed(seed=42):
     np.random.seed(seed)
     np.random.RandomState(seed)
 
-    torch.manual_seed(seed) 
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed) #seed all gpus    
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.enabled = False  
-    torch.backends.cudnn.benchmark = False
+    # torch.manual_seed(seed) 
+    # torch.cuda.manual_seed(seed)
+    # torch.cuda.manual_seed_all(seed) #seed all gpus    
+    # torch.backends.cudnn.deterministic = True
+    # torch.backends.cudnn.enabled = False  
+    # torch.backends.cudnn.benchmark = False
 
 CLOSENESS_LABELS = ['1. Close', '2. Know each other', "3. Don't know each other", "4. Don't like each other"]
 AUTHORITY_LABELS = ['0. Very respect', '1. Respect',  '2. Normal', '3. Not respect']
