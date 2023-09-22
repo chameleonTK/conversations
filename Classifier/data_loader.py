@@ -18,7 +18,7 @@ def run_preprocess(train, val, test):
 
     return train, val, test
 
-def get_task1_conver(in_dir, col_label, skips=[], seed=None, only_user=True):
+def get_task1_conver(in_dir, col_label, skips=[], seed=42, only_user=True):
     conversations = load_jsonl(f"{in_dir}")
 
     def to_message_str(messages, users):
@@ -66,9 +66,8 @@ def get_task1_conver(in_dir, col_label, skips=[], seed=None, only_user=True):
     n_val = int(len(newdata)*0.05)
     n_test = n_val
 
-    if seed is not None:
-        random.seed(seed)
-        random.shuffle(newdata)
+    random.seed(seed)
+    random.shuffle(newdata)
     
     test = newdata[0:n_test]
     val = newdata[n_test:n_test+n_val]
@@ -78,7 +77,7 @@ def get_task1_conver(in_dir, col_label, skips=[], seed=None, only_user=True):
     return pd.DataFrame(train), pd.DataFrame(val), pd.DataFrame(test)
 
 
-def get_task2_conver(in_dir, col_label, skips=[], only_user=True):
+def get_task2_conver(in_dir, col_label, skips=[], seed=42, only_user=True):
     conversations = load_jsonl(f"{in_dir}")
     # print(len(conversations))
     newdata = []
@@ -122,7 +121,10 @@ def get_task2_conver(in_dir, col_label, skips=[], only_user=True):
             
     n_val = int(len(newdata)*0.1)
     n_test = n_val
-    
+
+    random.seed(seed)
+    random.shuffle(newdata)
+
     test = newdata[0:n_test]
     val = newdata[n_test:n_test+n_val]
     train = newdata[n_test+n_val:]
