@@ -1,13 +1,18 @@
 ## Task1
 
-* `Download data.ipynb`: code for downloading data from the messaging platform.
-* `rooms.jsonl`: list of chat room in the platform created by participants.
-* `conversations.jsonl`: list of all conversations in the platform created by participants.
-* `task1_labels.csv`: social relationship labels
-* `validated_labels.csv`: labels at the validation step
-* `topics.csv`: seeding topics 
+* `Step1 Download Data.ipynb`: code for downloading data from the messaging platform.
+* `Step2 Annotator Agreement.ipynb`: code for calculating IAA.
+* `Step3 Validate UserIds.ipynb`: code for validating and re-annotating user ids (manually).
+* `raw_data/rooms.jsonl`: list of chat room in the platform created by participants.
+* `raw_data/conversations.jsonl`: list of raw conversations in the platform created by participants.
+* `raw_data/task1_labels.csv`: annotated labels
+* `raw_data/topics.csv`: seeding topics
+* `raw_data/re_annotated_user_ids.json`: user ids that needed to re-map to other user id 
+* `raw_data/validated_labels.csv`: labels at the validation step
+
+#### Note
+During data collection, some participants were disconnected and reconnected to the messaging platform multiple times, resulting in new user IDs being assigned upon each re-entry. As a result, some chat rooms contained multiple user IDs corresponding to the same individual. To resolve this, the researchers manually reviewed and reassigned user IDs based on the conversational context, ensuring that the dialogue flow remained coherent and that each conversation involved only two unique participants.
 
 
 #### Please ignore
-* `Set User ID.ipynb`: my attempt to re-annotate who reported the relationship label
-* `task1_validating.jsonl`: data sent to Wang.in.th in the validation step
+* `deprecated/task1_validating.jsonl`: data sent to Wang.in.th in the validation step
