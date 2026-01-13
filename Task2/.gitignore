@@ -1,0 +1,12 @@
+_private
+followers
+followings
+tweets_v1
+tweets_v2
+twitter_key.py
+twarc2_conversation*
+usermap
+tweets.jsonl
+twarc.log
+twitter_trends_v2.jsonl
+twitter_trends.jsonl
