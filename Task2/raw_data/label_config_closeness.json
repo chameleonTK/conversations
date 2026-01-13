@@ -1,0 +1,50 @@
+[
+  {
+    "id": 260,
+    "text": "สนิทกันมาก",
+    "prefixKey": null,
+    "suffixKey": "q",
+    "backgroundColor": "#131591",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 261,
+    "text": "สนิทกัน",
+    "prefixKey": null,
+    "suffixKey": "w",
+    "backgroundColor": "#0062B1",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 262,
+    "text": "แค่คนรู้จักกัน",
+    "prefixKey": null,
+    "suffixKey": "e",
+    "backgroundColor": "#16A5A5",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 263,
+    "text": "ไม่รู้จักกัน",
+    "prefixKey": null,
+    "suffixKey": "r",
+    "backgroundColor": "#0C797D",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 264,
+    "text": "ไม่ชอบหน้ากัน",
+    "prefixKey": null,
+    "suffixKey": "t",
+    "backgroundColor": "#68BC00",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 265,
+    "text": "บอกไม่ได้",
+    "prefixKey": null,
+    "suffixKey": "t",
+    "backgroundColor": "#D33115",
+    "textColor": "#ffffff"
+  }
+]

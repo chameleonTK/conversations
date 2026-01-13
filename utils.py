@@ -50,5 +50,11 @@ def set_random_seed(seed=42):
     # torch.backends.cudnn.enabled = False  
     # torch.backends.cudnn.benchmark = False
 
-CLOSENESS_LABELS = ['1. Close', '2. Know each other', "3. Don't know each other", "4. Don't like each other"]
+CLOSENESS_LABELS = [
+    "1. Very Close", 
+    "2. Close", 
+    "3. Know each other", 
+    "4. Don't know each other", 
+    "5. Don't like each other"
+]
 AUTHORITY_LABELS = ['0. Very respect', '1. Respect',  '2. Normal', '3. Not respect']
